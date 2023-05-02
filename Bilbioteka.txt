@@ -1,0 +1,67 @@
+import org.w3c.dom.ls.LSOutput;
+
+import java.util.Scanner;
+
+public class Bilbioteka {
+    public String tytul;
+    public String rodzaj;
+    public int cena;
+
+    public void info(){
+        System.out.println(" ");
+        System.out.println("Tytuł ksążki to: " + tytul);
+        System.out.println("Rodzaj książki to: " + rodzaj);
+        System.out.println("Cena książki to: " + cena + "zł");
+
+    }
+
+    public static void main(String[] args) {
+        System.out.println("Dostępne ksiązki: ");
+
+        Bilbioteka calineczka = new Bilbioteka();
+        calineczka.tytul = "Calineczka";
+        calineczka.rodzaj = "Fantasy";
+        calineczka.cena = 21;
+
+        calineczka.info();
+
+        Bilbioteka pinokio = new Bilbioteka();
+        pinokio.tytul = "Pinokio";
+        pinokio.rodzaj = "Fantasy";
+        pinokio.cena = 16;
+
+        pinokio.info();
+
+        Bilbioteka DzieciZBulerbyn = new Bilbioteka();
+        DzieciZBulerbyn.tytul = "Dzieci z Bulerbyn";
+        DzieciZBulerbyn.rodzaj = "Przygodowa";
+        DzieciZBulerbyn.cena = 30;
+
+        DzieciZBulerbyn.info();
+
+        Bilbioteka PiesKudlaty = new Bilbioteka();
+        PiesKudlaty.tytul = "Pies Kudłaty";
+        PiesKudlaty.rodzaj = "Dla Dzieci";
+        PiesKudlaty.cena = 16;
+
+        PiesKudlaty.info();
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Podaj tytuł książki, że by poznać cenę");
+        String name = scanner.nextLine();
+
+        if (name.equalsIgnoreCase("Calineczka"))
+            System.out.println(calineczka.cena);
+
+        if (name.equalsIgnoreCase("Pinokio"))
+            System.out.println(pinokio.cena);
+
+        if (name.equalsIgnoreCase("Dzieci z Bulerbyn"))
+            System.out.println(DzieciZBulerbyn.cena);
+
+        if(name.equalsIgnoreCase("Pies Kudłaty"))
+            System.out.println(PiesKudlaty.cena);
+
+    }
+
+}

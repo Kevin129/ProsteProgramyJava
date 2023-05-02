@@ -1,0 +1,40 @@
+public class DodawanieOdejmowanieMnożenieDzielenie {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        Scanner scaner = new Scanner(System.in);
+        System.out.println("Podaj swoje imię");
+        String name = scaner.nextLine();
+        System.out.println("Cześć " + name + " !");
+
+        System.out.print("Jestem twoim kalkulatorem, podaj pierwszą liczbę: ");
+        int pierwszaLiczba = scanner.nextInt();
+
+        System.out.print("Podaj drugą liczbę: ");
+        int drugaLiczba = scanner.nextInt();
+
+        System.out.println("Wybierz jedną z funkcji:");
+        System.out.println("Dodawanie: +");
+        System.out.println("Odejmowanie: -");
+        System.out.println("Mnożenie: *");
+        System.out.println("Dzielenie: /");
+
+        String odpowiedz = scanner.next();
+        if (odpowiedz.equals("+")) {
+            int roznica = pierwszaLiczba + drugaLiczba;
+            System.out.println("Wynik dodawania to: " + roznica);
+        }
+        if (odpowiedz.equals("-")) {
+            int roznica = pierwszaLiczba - drugaLiczba;
+            System.out.println("Wynik odejmowania to: " + roznica);
+        }
+        if (odpowiedz.equals("*")) {
+            int roznica = pierwszaLiczba * drugaLiczba;
+            System.out.println("Wynik mnożenia to: " + roznica);
+        }
+        if (odpowiedz.equals("/")) {
+            int roznica = pierwszaLiczba / drugaLiczba;
+            System.out.println("Wynik dzielenia to " + roznica);
+        }
+
+    }
+}

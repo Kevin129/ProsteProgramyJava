@@ -1,0 +1,15 @@
+public class PersonTest {
+    public static void main(String[] args) {
+        MathTeacher teacher = new MathTeacher("Tom", 29,"WSB");
+        teacher.person();
+        teacher.eat();
+        teacher.eat();
+
+        System.out.println(" ");
+
+        Footballer footballer = new Footballer("Jay", 28,"Manchester");
+        footballer.person();
+        footballer.playFootball();
+        footballer.eat();
+    }
+}
